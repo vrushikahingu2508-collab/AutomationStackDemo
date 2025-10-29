@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-24T14:43:39 IST" name="Default suite" finished-at="2025-10-24T14:44:25 IST" duration-ms="45949">
+    <groups>
+    </groups>
+    <test started-at="2025-10-24T14:43:39 IST" name="Default test" finished-at="2025-10-24T14:44:25 IST" duration-ms="45949">
+      <class name="com.BStack.TestCase.CartPageTestCase">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.BStack.TestCase.CartPageTestCase@6c80d78a]" started-at="2025-10-24T14:43:39 IST" name="setUp" finished-at="2025-10-24T14:43:49 IST" duration-ms="9933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddToCart()[pri:1, instance:com.BStack.TestCase.CartPageTestCase@6c80d78a]" started-at="2025-10-24T14:43:49 IST" name="testAddToCart" finished-at="2025-10-24T14:44:13 IST" duration-ms="24257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddToCart -->
+        <test-method signature="testOrderSummary()[pri:2, instance:com.BStack.TestCase.CartPageTestCase@6c80d78a]" started-at="2025-10-24T14:44:13 IST" name="testOrderSummary" finished-at="2025-10-24T14:44:15 IST" duration-ms="2148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrderSummary -->
+        <test-method signature="testShippingAddress()[pri:3, instance:com.BStack.TestCase.CartPageTestCase@6c80d78a]" started-at="2025-10-24T14:44:15 IST" name="testShippingAddress" finished-at="2025-10-24T14:44:19 IST" duration-ms="3723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testShippingAddress -->
+        <test-method signature="testOrderConfirmation()[pri:4, instance:com.BStack.TestCase.CartPageTestCase@6c80d78a]" started-at="2025-10-24T14:44:19 IST" name="testOrderConfirmation" finished-at="2025-10-24T14:44:25 IST" duration-ms="5725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrderConfirmation -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.BStack.TestCase.CartPageTestCase@6c80d78a]" started-at="2025-10-24T14:44:25 IST" name="close" finished-at="2025-10-24T14:44:25 IST" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.BStack.TestCase.CartPageTestCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
