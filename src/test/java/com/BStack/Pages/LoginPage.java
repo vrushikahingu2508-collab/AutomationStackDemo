@@ -29,6 +29,16 @@ public class LoginPage {
 	
 	@FindBy(xpath = "//*[@id=\"__next\"]/div[2]/div/form/div[2]/h3")private WebElement invalidMsg;
 	
+	@FindBy(xpath = "//*[@id=\"signin\"]")private WebElement logout;
+	
+	@FindBy(xpath = "//*[@id=\"username\"]")private WebElement userclick;
+	
+	@FindBy(xpath = "//*[@id=\"username\"]/div[1]/div[1]")private WebElement invalidUserInput;
+	@FindBy(xpath = "//*[@id=\"react-select-4-option-1\"]")private WebElement invalidUserCreate;	
+	
+	@FindBy(xpath = "//*[@id=\"react-select-5-input\"]")private WebElement invalidPasswordInput;
+	@FindBy(xpath = "//*[@id=\"react-select-5-option-1\"]")private WebElement invalidPasswordCraete;
+	
 	
 	public String login() {
 
@@ -53,11 +63,32 @@ public class LoginPage {
 			signInLink.click();
 			loginBtn.click();
 			CommonUtils.waitForWhile(2000);	
-
+			
+			
 		return invalidMsg.getText();
 	}
 	
+	public void logout() {
+		logout.click();
+		
+	}
 	
+
+	public String loginWithInvalidInput() 
+	{
+			driver.navigate().refresh();
+		
+			userclick.click();
+			invalidUserInput.sendKeys("AbcUser");
+			invalidUserCreate.click();
+			invalidPasswordInput.sendKeys("abc123");
+			invalidPasswordCraete.click();
+			loginBtn.click();
+			
+			CommonUtils.waitForWhile(2000);	
+
+		return invalidMsg.getText();
+	}
 	
 	
 	

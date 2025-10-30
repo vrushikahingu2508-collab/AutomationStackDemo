@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.BStack.TestCase.CartPageTestCase">
+      <class name="com.BStack.TestCase.LoginPageTestCase">
         <methods>
           <include name="close"/>
-          <include name="testShippingAddress"/>
+          <include name="testLoginWithInvalidInput"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.BStack.TestCase.CartPageTestCase -->
+      </class> <!-- com.BStack.TestCase.LoginPageTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

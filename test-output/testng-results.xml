@@ -1,37 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-24T14:43:39 IST" name="Default suite" finished-at="2025-10-24T14:44:25 IST" duration-ms="45949">
+  <suite started-at="2025-10-29T17:26:35 IST" name="Default suite" finished-at="2025-10-29T17:27:00 IST" duration-ms="25418">
     <groups>
     </groups>
-    <test started-at="2025-10-24T14:43:39 IST" name="Default test" finished-at="2025-10-24T14:44:25 IST" duration-ms="45949">
-      <class name="com.BStack.TestCase.CartPageTestCase">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.BStack.TestCase.CartPageTestCase@6c80d78a]" started-at="2025-10-24T14:43:39 IST" name="setUp" finished-at="2025-10-24T14:43:49 IST" duration-ms="9933" status="PASS">
+    <test started-at="2025-10-29T17:26:35 IST" name="Default test" finished-at="2025-10-29T17:27:00 IST" duration-ms="25418">
+      <class name="com.BStack.TestCase.LoginPageTestCase">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.BStack.TestCase.LoginPageTestCase@71809907]" started-at="2025-10-29T17:26:35 IST" name="setUp" finished-at="2025-10-29T17:26:45 IST" duration-ms="10013" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testAddToCart()[pri:1, instance:com.BStack.TestCase.CartPageTestCase@6c80d78a]" started-at="2025-10-24T14:43:49 IST" name="testAddToCart" finished-at="2025-10-24T14:44:13 IST" duration-ms="24257" status="PASS">
+        <test-method signature="testLoginWithValidData()[pri:1, instance:com.BStack.TestCase.LoginPageTestCase@71809907]" started-at="2025-10-29T17:26:45 IST" name="testLoginWithValidData" finished-at="2025-10-29T17:26:56 IST" duration-ms="11165" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAddToCart -->
-        <test-method signature="testOrderSummary()[pri:2, instance:com.BStack.TestCase.CartPageTestCase@6c80d78a]" started-at="2025-10-24T14:44:13 IST" name="testOrderSummary" finished-at="2025-10-24T14:44:15 IST" duration-ms="2148" status="PASS">
+        </test-method> <!-- testLoginWithValidData -->
+        <test-method signature="testLoginWithEmptyInput()[pri:2, instance:com.BStack.TestCase.LoginPageTestCase@71809907]" started-at="2025-10-29T17:26:56 IST" name="testLoginWithEmptyInput" finished-at="2025-10-29T17:26:58 IST" duration-ms="2579" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testOrderSummary -->
-        <test-method signature="testShippingAddress()[pri:3, instance:com.BStack.TestCase.CartPageTestCase@6c80d78a]" started-at="2025-10-24T14:44:15 IST" name="testShippingAddress" finished-at="2025-10-24T14:44:19 IST" duration-ms="3723" status="PASS">
+        </test-method> <!-- testLoginWithEmptyInput -->
+        <test-method signature="testLoginWithInvalidInput()[pri:3, instance:com.BStack.TestCase.LoginPageTestCase@71809907]" started-at="2025-10-29T17:26:58 IST" name="testLoginWithInvalidInput" finished-at="2025-10-29T17:27:00 IST" duration-ms="1510" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=141.0.7390.123)
+Build info: version: '4.37.0', revision: '3c1da1e342'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ff5a9e0d2bae929a97decca9b9a2fc26, sendKeysToElement {value=[Ljava.lang.CharSequence;@1cd201a8, id=f.666730D9DC376322852484D0A2566DDA.d.7FF7175BF2EE9540FC11043627A91797.e.110}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/zv/q98nm2vs4gl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54472}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54472/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (ff5a9e0d2bae929a97decca9b9a2fc26)] -> xpath: //*[@id="username"]/div[1]/div[1]]
+Session ID: ff5a9e0d2bae929a97decca9b9a2fc26]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=141.0.7390.123)
+Build info: version: '4.37.0', revision: '3c1da1e342'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ff5a9e0d2bae929a97decca9b9a2fc26, sendKeysToElement {value=[Ljava.lang.CharSequence;@1cd201a8, id=f.666730D9DC376322852484D0A2566DDA.d.7FF7175BF2EE9540FC11043627A91797.e.110}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/zv/q98nm2vs4gl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54472}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54472/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (ff5a9e0d2bae929a97decca9b9a2fc26)] -> xpath: //*[@id="username"]/div[1]/div[1]]
+Session ID: ff5a9e0d2bae929a97decca9b9a2fc26
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
+at com.BStack.Pages.LoginPage.loginWithInvalidInput(LoginPage.java:82)
+at com.BStack.TestCase.LoginPageTestCase.testLoginWithInvalidInput(LoginPageTestCase.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testShippingAddress -->
-        <test-method signature="testOrderConfirmation()[pri:4, instance:com.BStack.TestCase.CartPageTestCase@6c80d78a]" started-at="2025-10-24T14:44:19 IST" name="testOrderConfirmation" finished-at="2025-10-24T14:44:25 IST" duration-ms="5725" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testOrderConfirmation -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.BStack.TestCase.CartPageTestCase@6c80d78a]" started-at="2025-10-24T14:44:25 IST" name="close" finished-at="2025-10-24T14:44:25 IST" duration-ms="139" status="PASS">
+        </test-method> <!-- testLoginWithInvalidInput -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.BStack.TestCase.LoginPageTestCase@71809907]" started-at="2025-10-29T17:27:00 IST" name="close" finished-at="2025-10-29T17:27:00 IST" duration-ms="136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- com.BStack.TestCase.CartPageTestCase -->
+      </class> <!-- com.BStack.TestCase.LoginPageTestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
